@@ -20,21 +20,22 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Pisces","version":"7.7.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="环境微信开发者工具（Stable v1.02.1911180） 遇到的问题在小程序设计过程中，发现button无法通过wxss或者在wxml内调整宽度，原因是参数不能正确的传递到组件上。 解决方案删除app.json中 1&quot;style&quot;: &quot;v2&quot;,  原因分析微信客户端 7.0 开始，UI 界面进行了大改版。小程序也进行了基础组件的样式升级。app.json 中配置 &quot;style&amp;qu">
+  <meta name="description" content="环境Pycharm v2020.1.EAP + Python v3.8.2 + requests v2.23.0 requests库包含的方法本质上看，requests库仅有一个request()方法，其余均是此方法的变化形式，主要为方便用户使用。    方法 说明    requests.request() 构造一个请求，支撑以下个方法的基础方法   requests.get() 获取HTML网">
 <meta property="og:type" content="article">
-<meta property="og:title" content="小程序button无法调整宽度">
-<meta property="og:url" content="http://yoursite.com/2020/03/14/1/index.html">
+<meta property="og:title" content="requests库基本操作">
+<meta property="og:url" content="http://yoursite.com/2020/03/17/3/index.html">
 <meta property="og:site_name" content="Ted&#39;s blog">
-<meta property="og:description" content="环境微信开发者工具（Stable v1.02.1911180） 遇到的问题在小程序设计过程中，发现button无法通过wxss或者在wxml内调整宽度，原因是参数不能正确的传递到组件上。 解决方案删除app.json中 1&quot;style&quot;: &quot;v2&quot;,  原因分析微信客户端 7.0 开始，UI 界面进行了大改版。小程序也进行了基础组件的样式升级。app.json 中配置 &quot;style&amp;qu">
+<meta property="og:description" content="环境Pycharm v2020.1.EAP + Python v3.8.2 + requests v2.23.0 requests库包含的方法本质上看，requests库仅有一个request()方法，其余均是此方法的变化形式，主要为方便用户使用。    方法 说明    requests.request() 构造一个请求，支撑以下个方法的基础方法   requests.get() 获取HTML网">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-03-14T02:54:46.000Z">
-<meta property="article:modified_time" content="2020-03-15T05:32:18.682Z">
+<meta property="article:published_time" content="2020-03-17T15:06:19.000Z">
+<meta property="article:modified_time" content="2020-03-17T16:14:50.311Z">
 <meta property="article:author" content="Ted">
-<meta property="article:tag" content="miniProgram">
-<meta property="article:tag" content="button">
+<meta property="article:tag" content="python">
+<meta property="article:tag" content="requests">
+<meta property="article:tag" content="心得">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/2020/03/14/1/">
+<link rel="canonical" href="http://yoursite.com/2020/03/17/3/">
 
 
 <script id="page-configurations">
@@ -46,7 +47,7 @@
   };
 </script>
 
-  <title>小程序button无法调整宽度 | Ted's blog</title>
+  <title>requests库基本操作 | Ted's blog</title>
   
 
 
@@ -165,7 +166,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/14/1/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/17/3/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -178,7 +179,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          小程序button无法调整宽度
+          requests库基本操作
         </h1>
 
         <div class="post-meta">
@@ -188,14 +189,14 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2020-03-14 10:54:46" itemprop="dateCreated datePublished" datetime="2020-03-14T10:54:46+08:00">2020-03-14</time>
+              <time title="创建时间：2020-03-17 23:06:19" itemprop="dateCreated datePublished" datetime="2020-03-17T23:06:19+08:00">2020-03-17</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-15 13:32:18" itemprop="dateModified" datetime="2020-03-15T13:32:18+08:00">2020-03-15</time>
+                <time title="修改时间：2020-03-18 00:14:50" itemprop="dateModified" datetime="2020-03-18T00:14:50+08:00">2020-03-18</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -203,7 +204,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/" itemprop="url" rel="index"><span itemprop="name">微信小程序</span></a>
+                  <a href="/categories/python/" itemprop="url" rel="index"><span itemprop="name">python</span></a>
                 </span>
             </span>
 
@@ -218,14 +219,129 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><p>微信开发者工具（Stable v1.02.1911180）</p>
-<h2 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h2><p>在小程序设计过程中，发现button无法通过wxss或者在wxml内调整宽度，原因是参数不能正确的传递到组件上。</p>
-<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>删除app.json中</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">"style": "v2",</span><br></pre></td></tr></table></figure>
-
-<h2 id="原因分析"><a href="#原因分析" class="headerlink" title="原因分析"></a>原因分析</h2><p>微信客户端 7.0 开始，UI 界面进行了大改版。小程序也进行了基础组件的样式升级。app.json 中配置 <code>&quot;style&quot;: &quot;v2&quot;</code>可表明启用新版的组件样式。</p>
-<p>目前使用的微信开发者工具的版本在新建项目时，会在app.json中自动生成该参数。</p>
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><p>[1] <a href="https://developers.weixin.qq.com/miniprogram/dev/reference/configuration/app.html#style" target="_blank" rel="noopener">小程序官方文档-框架-小程序配置-全局配置</a></p>
+        <h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><p>Pycharm v2020.1.EAP + Python v3.8.2 + requests v2.23.0</p>
+<h2 id="requests库包含的方法"><a href="#requests库包含的方法" class="headerlink" title="requests库包含的方法"></a>requests库包含的方法</h2><p>本质上看，requests库仅有一个request()方法，其余均是此方法的变化形式，主要为方便用户使用。</p>
+<table>
+<thead>
+<tr>
+<th align="left">方法</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">requests.request()</td>
+<td>构造一个请求，支撑以下个方法的基础方法</td>
+</tr>
+<tr>
+<td align="left">requests.get()</td>
+<td>获取HTML网页的主要方法，对应于HTTP的GET</td>
+</tr>
+<tr>
+<td align="left">requests.head()</td>
+<td>获取HTML网页头信息的方法，对应于HTTP的HEAD</td>
+</tr>
+<tr>
+<td align="left">requests.post()</td>
+<td>向HTML网页提交POST的请求方法，对应于HTTP的POST</td>
+</tr>
+<tr>
+<td align="left">requests.put()</td>
+<td>向HTML网页提交PUT请求的方法，对应于HTTP的PUT</td>
+</tr>
+<tr>
+<td align="left">requests.patch()</td>
+<td>向HTML网页提交局部修改请求，对应于HTTP的PATCH</td>
+</tr>
+<tr>
+<td align="left">requests.delete()</td>
+<td>向HTML网页提交删除请求，对应于HTTP的DELETE</td>
+</tr>
+</tbody></table>
+<p>因此，更多的是如何根据客户的设置，灵活使用以上所包含的13种参数。</p>
+<table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>解释</th>
+<th>参数名称</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>params</td>
+<td>字典或字节序列，可选</td>
+<td>data</td>
+<td>字典、字节序列或文件对象，作为Request的内容</td>
+</tr>
+<tr>
+<td>json</td>
+<td>JSON格式的数据，作为Request的内容</td>
+<td>headers</td>
+<td>字典，HTTP定制头</td>
+</tr>
+<tr>
+<td>cookies</td>
+<td>字典或CookieJar，Request中的cookie</td>
+<td>auth</td>
+<td>元组，支持HTTP认证功能</td>
+</tr>
+<tr>
+<td>files</td>
+<td>字典类型，传输文件</td>
+<td>timeout</td>
+<td>设定超时时间，秒为单位</td>
+</tr>
+<tr>
+<td>proxies</td>
+<td>字典类型，设定访问代理服务器，可以增加登陆认证</td>
+<td>allow_redirects</td>
+<td>T/F，默认为True，重定向开关</td>
+</tr>
+<tr>
+<td>stream</td>
+<td>T/F，默认为True，获取内容立即下载开关</td>
+<td>verify</td>
+<td>T/F，默认为True，认证SSL证书开关</td>
+</tr>
+<tr>
+<td>cert</td>
+<td>本地SSL证书路径</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<p>在成功通过Request获取Response后，要通过Response的属性来对数据进行处理。</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>r.status+code</td>
+<td>HTTP请求的返回状态，200表示链接成功，404表示失败</td>
+</tr>
+<tr>
+<td>r.text</td>
+<td>HTTP响应内容的字符串形式，即，url对应的页面内容</td>
+</tr>
+<tr>
+<td>r.encoding</td>
+<td>从HTTP header中猜测的响应内容编码方式</td>
+</tr>
+<tr>
+<td>r.apparent_encoding</td>
+<td>从内容中分析出的响应内容编码方式（备选编码方式）</td>
+</tr>
+<tr>
+<td>r.content</td>
+<td>HTTP响应内容的二进制形式</td>
+</tr>
+</tbody></table>
+<h2 id="心得"><a href="#心得" class="headerlink" title="心得"></a>心得</h2><p>视频中可以成功爬取的例子，在实际练习的时候，有些无法完成。</p>
+<p>尝试后发现最主要是需要添加headers，其次是网站对于请求的链接有变化。</p>
+<p>总的来说，只要根据实际情况，灵活运用以上这些内容，就可以完成简单的网站信息爬取工作。</p>
 
     </div>
 
@@ -235,8 +351,9 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/miniProgram/" rel="tag"># miniProgram</a>
-              <a href="/tags/button/" rel="tag"># button</a>
+              <a href="/tags/python/" rel="tag"># python</a>
+              <a href="/tags/requests/" rel="tag"># requests</a>
+              <a href="/tags/%E5%BF%83%E5%BE%97/" rel="tag"># 心得</a>
           </div>
 
         
@@ -244,11 +361,11 @@
 
         
     <div class="post-nav">
-      <div class="post-nav-item"></div>
       <div class="post-nav-item">
-    <a href="/2020/03/15/2/" rel="next" title="Hexo调整">
-      Hexo调整 <i class="fa fa-chevron-right"></i>
+    <a href="/2020/03/15/2/" rel="prev" title="Hexo调整">
+      <i class="fa fa-chevron-left"></i> Hexo调整
     </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -308,7 +425,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#环境"><span class="nav-number">1.</span> <span class="nav-text">环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#遇到的问题"><span class="nav-number">2.</span> <span class="nav-text">遇到的问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解决方案"><span class="nav-number">3.</span> <span class="nav-text">解决方案</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#原因分析"><span class="nav-number">4.</span> <span class="nav-text">原因分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考资料"><span class="nav-number">5.</span> <span class="nav-text">参考资料</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#环境"><span class="nav-number">1.</span> <span class="nav-text">环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#requests库包含的方法"><span class="nav-number">2.</span> <span class="nav-text">requests库包含的方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#心得"><span class="nav-number">3.</span> <span class="nav-text">心得</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
